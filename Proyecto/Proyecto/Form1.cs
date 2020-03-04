@@ -20,22 +20,24 @@ namespace Proyecto
         }
 
         public static List<decimal> listaPrecios = new List<decimal>();
+        public static List<decimal> listaCantidad = new List<decimal>();
         public static List<string> listaUnidad = new List<string>();
 
-        public static void modificaLista(decimal precio, string producto) {
+        public static void modificaLista(decimal precio, string producto, decimal cantidad) {
             listaUnidad.Add(producto);
             listaPrecios.Add(precio);
+            listaCantidad.Add(cantidad);
         }
         public static void LimpiaListas()
         {
             listaPrecios.Clear();
             listaUnidad.Clear();
         }
-        public void ConsultaLista(List<decimal> listaPrecios, List<string> listaUnidad) {
+        public void ConsultaLista(List<decimal> listaPrecios, List<string> listaUnidad, List<decimal> listaCantidad) {
             string cadena = "";
             for (int contador = 0; contador < listaUnidad.Count; contador++)
             {
-                cadena += ("Unidad: " + listaUnidad[contador] + " Precio: $" + listaPrecios[contador] + "\n");
+                cadena += ("Unidad: " + listaUnidad[contador] + " Precio: $" + listaPrecios[contador]/listaCantidad[contador] + " Cantidad: " + listaCantidad[contador] + " Total: $" + listaPrecios[contador] + "\n");
             }
             Form4 f4 = new Form4(cadena, listaPrecios);
             f4.ShowDialog();
@@ -135,7 +137,7 @@ namespace Proyecto
             unCheck(bebidasToolStripMenuItem1);
             DeshabilitarCreditos();
             DeshabilitarNosotros();
-            ConsultaLista(listaPrecios, listaUnidad);
+            ConsultaLista(listaPrecios, listaUnidad, listaCantidad);
             checaOrden();
 
         }

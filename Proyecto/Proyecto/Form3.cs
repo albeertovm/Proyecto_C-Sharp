@@ -54,8 +54,11 @@ namespace Proyecto
             {
                 label2.Text = "Precio: $";
                 label1.Text = elemento;
+                pictureBox1.Image = Image.FromFile(Directory.GetParent(Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).ToString()).ToString()).ToString() + @"\Images\" + elementoSeleccionado.ToString().Trim() + ".jpg");
+                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             }
         }
+
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
@@ -68,7 +71,7 @@ namespace Proyecto
             decimal precio = Convert.ToDecimal(label1.Text) * cantidad;
             string elementoSeleccionado = comboBox1.GetItemText(comboBox1.SelectedItem).ToString();
             MessageBox.Show("Se han agregado: " + cantidad + " unidades de " + elementoSeleccionado);
-            Form1.modificaLista(precio, elementoSeleccionado);
+            Form1.modificaLista(precio, elementoSeleccionado, cantidad);
             numericUpDown1.Value = 1;
         }
 

@@ -30,8 +30,9 @@ namespace Proyecto
         private void button1_Click(object sender, EventArgs e)
         {
             Form1.LimpiaListas();
-            MessageBox.Show("Gracias por su compra! >:D");
+            MessageBox.Show("Gracias por su compra! :D");
             this.Close();
+
         }
     }
 }
