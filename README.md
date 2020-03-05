@@ -2,6 +2,7 @@
 
 Aspectos generales del proyecto:
 
+- Cada acción que realiza el usuario es notificada al mismo por la aplicación(agregar unidades, confirmar orden, navegación, etc). 
 - Las sugerencias se guardan en el archivo: "Proyecto_C-Sharp\Proyecto\Proyecto\bin\Debug"
 - Las imagenes son tomadas del directorio: "Proyecto_C-Sharp\Proyecto\Images"
 - Las unidades (entrada, platillo, postre o bebida) y sus precios son tomados de la base de datos SQLite: bdlaemperatriz.db
