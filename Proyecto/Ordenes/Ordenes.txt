@@ -1,0 +1,8 @@
+Unidad: Torta tibia de manzana con helado Precio: $45 Cantidad: 1 Total: $45
+Unidad: Torta tibia de manzana con helado Precio: $45 Cantidad: 1 Total: $45
+Unidad: Torta tibia de manzana con helado Precio: $45 Cantidad: 1 Total: $45
+Unidad: New York Steak Precio: $200 Cantidad: 3 Total: $600
+
+Total: $735
+Fecha: 3/4/2020 7:06:22 PM
+--------------------------------------------

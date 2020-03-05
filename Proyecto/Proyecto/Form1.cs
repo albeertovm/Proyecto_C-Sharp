@@ -37,7 +37,7 @@ namespace Proyecto
             string cadena = "";
             for (int contador = 0; contador < listaUnidad.Count; contador++)
             {
-                cadena += ("Unidad: " + listaUnidad[contador] + " Precio: $" + listaPrecios[contador]/listaCantidad[contador] + " Cantidad: " + listaCantidad[contador] + " Total: $" + listaPrecios[contador] + "\n");
+                cadena += ("Unidad: " + listaUnidad[contador] + " Precio: $" + (listaPrecios[contador]/listaCantidad[contador]) + " Cantidad: " + listaCantidad[contador] + " Total: $" + listaPrecios[contador] + "\n");
             }
             Form4 f4 = new Form4(cadena, listaPrecios);
             f4.ShowDialog();
