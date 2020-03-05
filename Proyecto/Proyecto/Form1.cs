@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -284,6 +285,26 @@ namespace Proyecto
             else
             {
                 DeshabilitarItem(nosotrosToolStripMenuItem);
+            }
+        }
+
+        private void sugereniToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SugerenciaForm sf = new SugerenciaForm();
+            sf.ShowDialog();
+        }
+
+        private void verSegurenciasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var xd = Directory.GetCurrentDirectory() + "\\sugerencias.txt";
+            try
+            {
+                string contenido = File.ReadAllText(xd, Encoding.UTF8);
+                MessageBox.Show(contenido + "\nSe pueden visualizar en la carpeta del proyecto\\bin\\debug\\sugerencias.txt");
+            }
+            catch (FileNotFoundException fe)
+            {
+                MessageBox.Show("No hay comentarios :c");
             }
         }
     }

@@ -48,6 +48,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.sugereniToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verSegurenciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -68,7 +70,8 @@
             this.salirToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(819, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(614, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -76,7 +79,7 @@
             // 
             this.cartaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cartaToolStripMenuItem.Image")));
             this.cartaToolStripMenuItem.Name = "cartaToolStripMenuItem";
-            this.cartaToolStripMenuItem.Size = new System.Drawing.Size(79, 24);
+            this.cartaToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
             this.cartaToolStripMenuItem.Text = "Inicio";
             this.cartaToolStripMenuItem.Click += new System.EventHandler(this.cartaToolStripMenuItem_Click);
             // 
@@ -84,7 +87,7 @@
             // 
             this.ordenToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ordenToolStripMenuItem.Image")));
             this.ordenToolStripMenuItem.Name = "ordenToolStripMenuItem";
-            this.ordenToolStripMenuItem.Size = new System.Drawing.Size(103, 24);
+            this.ordenToolStripMenuItem.Size = new System.Drawing.Size(87, 24);
             this.ordenToolStripMenuItem.Text = "Nosotros";
             this.ordenToolStripMenuItem.Click += new System.EventHandler(this.ordenToolStripMenuItem_Click);
             // 
@@ -97,35 +100,35 @@
             this.bebidasToolStripMenuItem1});
             this.créditosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("créditosToolStripMenuItem.Image")));
             this.créditosToolStripMenuItem.Name = "créditosToolStripMenuItem";
-            this.créditosToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
+            this.créditosToolStripMenuItem.Size = new System.Drawing.Size(67, 24);
             this.créditosToolStripMenuItem.Text = "Carta";
             this.créditosToolStripMenuItem.Click += new System.EventHandler(this.créditosToolStripMenuItem_Click);
             // 
             // entradasToolStripMenuItem1
             // 
             this.entradasToolStripMenuItem1.Name = "entradasToolStripMenuItem1";
-            this.entradasToolStripMenuItem1.Size = new System.Drawing.Size(149, 26);
+            this.entradasToolStripMenuItem1.Size = new System.Drawing.Size(119, 22);
             this.entradasToolStripMenuItem1.Text = "Entradas";
             this.entradasToolStripMenuItem1.Click += new System.EventHandler(this.entradasToolStripMenuItem1_Click);
             // 
             // platillosToolStripMenuItem1
             // 
             this.platillosToolStripMenuItem1.Name = "platillosToolStripMenuItem1";
-            this.platillosToolStripMenuItem1.Size = new System.Drawing.Size(149, 26);
+            this.platillosToolStripMenuItem1.Size = new System.Drawing.Size(119, 22);
             this.platillosToolStripMenuItem1.Text = "Platillos";
             this.platillosToolStripMenuItem1.Click += new System.EventHandler(this.platillosToolStripMenuItem1_Click);
             // 
             // postresToolStripMenuItem1
             // 
             this.postresToolStripMenuItem1.Name = "postresToolStripMenuItem1";
-            this.postresToolStripMenuItem1.Size = new System.Drawing.Size(149, 26);
+            this.postresToolStripMenuItem1.Size = new System.Drawing.Size(119, 22);
             this.postresToolStripMenuItem1.Text = "Postres";
             this.postresToolStripMenuItem1.Click += new System.EventHandler(this.postresToolStripMenuItem1_Click);
             // 
             // bebidasToolStripMenuItem1
             // 
             this.bebidasToolStripMenuItem1.Name = "bebidasToolStripMenuItem1";
-            this.bebidasToolStripMenuItem1.Size = new System.Drawing.Size(149, 26);
+            this.bebidasToolStripMenuItem1.Size = new System.Drawing.Size(119, 22);
             this.bebidasToolStripMenuItem1.Text = "Bebidas";
             this.bebidasToolStripMenuItem1.Click += new System.EventHandler(this.bebidasToolStripMenuItem1_Click);
             // 
@@ -133,15 +136,18 @@
             // 
             this.nosotrosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("nosotrosToolStripMenuItem.Image")));
             this.nosotrosToolStripMenuItem.Name = "nosotrosToolStripMenuItem";
-            this.nosotrosToolStripMenuItem.Size = new System.Drawing.Size(107, 24);
+            this.nosotrosToolStripMenuItem.Size = new System.Drawing.Size(89, 24);
             this.nosotrosToolStripMenuItem.Text = "Ver orden";
             this.nosotrosToolStripMenuItem.Click += new System.EventHandler(this.nosotrosToolStripMenuItem_Click);
             // 
             // sugerenciasToolStripMenuItem
             // 
+            this.sugerenciasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sugereniToolStripMenuItem,
+            this.verSegurenciasToolStripMenuItem});
             this.sugerenciasToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("sugerenciasToolStripMenuItem.Image")));
             this.sugerenciasToolStripMenuItem.Name = "sugerenciasToolStripMenuItem";
-            this.sugerenciasToolStripMenuItem.Size = new System.Drawing.Size(122, 24);
+            this.sugerenciasToolStripMenuItem.Size = new System.Drawing.Size(102, 24);
             this.sugerenciasToolStripMenuItem.Text = "Sugerencias";
             this.sugerenciasToolStripMenuItem.Click += new System.EventHandler(this.ubicaciónToolStripMenuItem_Click);
             // 
@@ -149,7 +155,7 @@
             // 
             this.créditosToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("créditosToolStripMenuItem1.Image")));
             this.créditosToolStripMenuItem1.Name = "créditosToolStripMenuItem1";
-            this.créditosToolStripMenuItem1.Size = new System.Drawing.Size(98, 24);
+            this.créditosToolStripMenuItem1.Size = new System.Drawing.Size(83, 24);
             this.créditosToolStripMenuItem1.Text = "Créditos";
             this.créditosToolStripMenuItem1.Click += new System.EventHandler(this.créditosToolStripMenuItem1_Click);
             // 
@@ -157,7 +163,7 @@
             // 
             this.salirToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("salirToolStripMenuItem.Image")));
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(72, 24);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(61, 24);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -167,9 +173,10 @@
             this.label1.BackColor = System.Drawing.Color.DarkCyan;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(382, 129);
+            this.label1.Location = new System.Drawing.Point(286, 105);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(391, 160);
+            this.label1.Size = new System.Drawing.Size(320, 136);
             this.label1.TabIndex = 2;
             this.label1.Text = resources.GetString("label1.Text");
             this.label1.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -181,9 +188,10 @@
             this.label2.BackColor = System.Drawing.Color.DarkCyan;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(382, 118);
+            this.label2.Location = new System.Drawing.Point(286, 96);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(331, 200);
+            this.label2.Size = new System.Drawing.Size(268, 170);
             this.label2.TabIndex = 4;
             this.label2.Text = resources.GetString("label2.Text");
             this.label2.Visible = false;
@@ -192,9 +200,10 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(85, 129);
+            this.pictureBox4.Location = new System.Drawing.Point(64, 105);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(209, 172);
+            this.pictureBox4.Size = new System.Drawing.Size(157, 140);
             this.pictureBox4.TabIndex = 6;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Visible = false;
@@ -203,9 +212,10 @@
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.InitialImage = null;
-            this.pictureBox3.Location = new System.Drawing.Point(85, 129);
+            this.pictureBox3.Location = new System.Drawing.Point(64, 105);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(195, 146);
+            this.pictureBox3.Size = new System.Drawing.Size(146, 119);
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Visible = false;
@@ -213,18 +223,20 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-2, 63);
+            this.pictureBox1.Location = new System.Drawing.Point(-2, 51);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(357, 323);
+            this.pictureBox1.Size = new System.Drawing.Size(268, 262);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.DarkCyan;
-            this.pictureBox2.Location = new System.Drawing.Point(361, 31);
+            this.pictureBox2.Location = new System.Drawing.Point(271, 25);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(458, 385);
+            this.pictureBox2.Size = new System.Drawing.Size(344, 313);
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
@@ -234,19 +246,34 @@
             this.label3.BackColor = System.Drawing.Color.DarkCyan;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.Location = new System.Drawing.Point(408, 138);
+            this.label3.Location = new System.Drawing.Point(306, 112);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(342, 180);
+            this.label3.Size = new System.Drawing.Size(279, 153);
             this.label3.TabIndex = 7;
             this.label3.Text = resources.GetString("label3.Text");
             this.label3.Visible = false;
             // 
+            // sugereniToolStripMenuItem
+            // 
+            this.sugereniToolStripMenuItem.Name = "sugereniToolStripMenuItem";
+            this.sugereniToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sugereniToolStripMenuItem.Text = "Sugerencias";
+            this.sugereniToolStripMenuItem.Click += new System.EventHandler(this.sugereniToolStripMenuItem_Click);
+            // 
+            // verSegurenciasToolStripMenuItem
+            // 
+            this.verSegurenciasToolStripMenuItem.Name = "verSegurenciasToolStripMenuItem";
+            this.verSegurenciasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.verSegurenciasToolStripMenuItem.Text = "Ver segurencias";
+            this.verSegurenciasToolStripMenuItem.Click += new System.EventHandler(this.verSegurenciasToolStripMenuItem_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(819, 415);
+            this.ClientSize = new System.Drawing.Size(614, 337);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
@@ -257,6 +284,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Opacity = 0.98D;
             this.Text = "Restaurante La Emperatríz";
@@ -293,6 +321,8 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.ToolStripMenuItem nosotrosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sugereniToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verSegurenciasToolStripMenuItem;
     }
 }
 
