@@ -11,3 +11,9 @@ Aspectos generales del proyecto:
 - Una vez confirmada una orden, se agrega esa orden al archivo ordenes.txt ubicado en el directorio: "Proyecto_C-Sharp\Proyecto\Ordenes". Una vez confirmada una orden se reinicia el flujo.
 - Al seleccionar alguna unidad (entrada, platillo, postre o bebida), se muestra una imagen previa de esa unidad.
 - Si se abre una nueva ventana (menú o sugerencias) se debe cerrar esa ventana para volver a interactuar con el menú principal.
+
+Realizado por:
+
+- Baruch Guerra Rodolfo
+- Ramírez González Carlos Andrés
+- Valverde Martínez Alberto
